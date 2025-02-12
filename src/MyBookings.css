@@ -1,0 +1,123 @@
+.my-bookings-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .my-bookings-container h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .my-bookings-container p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 20px;
+  }
+  
+  .booking-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .booking-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: left;
+  }
+  
+  .booking-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .booking-header h3 {
+    font-size: 1.4rem;
+    color: #333;
+    margin: 0;
+  }
+  
+  .status {
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+  }
+  
+  .status.confirmed {
+    background-color: #4caf50;
+    color: white;
+  }
+  
+  .status.pending {
+    background-color: #ff9800;
+    color: white;
+  }
+  
+  .booking-details {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  .booking-details p {
+    margin: 5px 0;
+  }
+  
+  .booking-actions {
+    margin-top: 15px;
+  }
+  
+  .view-details-btn,
+  .cancel-btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-right: 10px;
+  }
+  
+  .view-details-btn {
+    background-color: #2196f3;
+    color: white;
+  }
+  
+  .view-details-btn:hover {
+    background-color: #1976d2;
+  }
+  
+  .cancel-btn {
+    background-color: #f44336;
+    color: white;
+  }
+  
+  .cancel-btn:hover {
+    background-color: #e53935;
+  }
+  
+  @media (max-width: 768px) {
+    .my-bookings-container {
+      padding: 15px;
+    }
+  
+    .booking-item {
+      padding: 15px;
+    }
+  
+    .view-details-btn,
+    .cancel-btn {
+      width: 100%;
+      margin: 5px 0;
+    }
+  }
+  

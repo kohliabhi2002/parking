@@ -1,0 +1,124 @@
+.payments-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .payments-container h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  .payments-container p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 20px;
+  }
+  
+  .payment-methods {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .payment-method {
+    width: 30%;
+    padding: 15px;
+    text-align: center;
+    font-size: 1.2rem;
+    background-color: #efefef;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .payment-method:hover {
+    background-color: #d3d3d3;
+  }
+  
+  .payment-method.selected {
+    background-color: #4caf50;
+    color: white;
+  }
+  
+  .payment-details {
+    margin-bottom: 20px;
+  }
+  
+  .amount-input {
+    width: 100%;
+    padding: 12px;
+    font-size: 1.2rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+  
+  .pay-btn {
+    width: 100%;
+    padding: 15px;
+    background-color: #4caf50;
+    color: white;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .pay-btn:disabled {
+    background-color: #c8e6c9;
+    cursor: not-allowed;
+  }
+  
+  .pay-btn:hover:not(:disabled) {
+    background-color: #388e3c;
+  }
+  
+  .transaction-status {
+    font-size: 1rem;
+    color: #388e3c;
+    margin-top: 20px;
+  }
+  
+  .transaction-history {
+    margin-top: 30px;
+    border-top: 2px solid #ccc;
+    padding-top: 20px;
+  }
+  
+  .transaction-item {
+    background-color: #fff;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .transaction-item .transaction-details p {
+    margin: 5px 0;
+  }
+  
+  @media (max-width: 768px) {
+    .payment-methods {
+      flex-direction: column;
+      gap: 15px;
+    }
+  
+    .payment-method {
+      width: 100%;
+    }
+  
+    .pay-btn {
+      width: 80%;
+    }
+  
+    .transaction-item {
+      padding: 12px;
+    }
+  }
+  
